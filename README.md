@@ -14,7 +14,7 @@
 - [mentortee](#mentortee)
 
   - [목차](##목차)
-
+  - [프로젝트 구조](##프로젝트-구조)
   - [Swift Code convention](##Swift-Code-Convention)
 
     - [1. 코드 포매팅](###1.-코드-포매팅)
@@ -68,6 +68,20 @@
       - [3.13. return](####3.13.-return)
 
       - [3.14. 사용하지 않는 코드](####3.14.-사용하지-않는-코드)
+
+## 프로젝트 구조
+
+```powershell
+mentortee
+├── mentorteeApp.swift
+├── ContentView.swift
+└── Chemi & Rookie
+    ├── MainPage.swift
+    ├── TabView.swift
+    └── TopBar.swift
+```
+
+
 
 ## Swift Code Convention
 
