@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct MainPage: View {
+    static let dateformat: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "ko-KR")
+        formatter.dateFormat = "YY년 M월 d일 (eeee)"
+        return formatter
+    }()
+    
+    var today = Date()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("\(today, formatter: MainPage.dateformat)")
+                .foregroundColor(.white)
+                .background(
+                    RoundedRectangle(
+                    cornerRadius: 20))
+        }
+        
     }
 }
 
