@@ -71,6 +71,8 @@
 
 ## 프로젝트 구조
 
+### 디렉터리 구조
+
 ```powershell
 mentortee
 ├── mentorteeApp.swift
@@ -79,6 +81,19 @@ mentortee
     ├── MainPage.swift
     ├── TabView.swift
     └── TopBar.swift
+```
+
+### View 종속 구조
+
+```powershell
+mentortee
+├── mentorteeApp.swift
+└── ContentView.swift
+│   ├── MainPage.swift
+│   ├── Feed페이지
+│   ├── 내가한질문/답변
+│   └── 마이페이지
+└── 리소스
 ```
 
 
