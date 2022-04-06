@@ -11,7 +11,7 @@ struct MainPage: View {
     var body: some View {
         VStack {
             TopBar()
-            TapView()
+            Zs
         }
     }
 }
@@ -21,3 +21,6 @@ struct MainPage_Previews: PreviewProvider {
         MainPage()
     }
 }
+
+
+// commit d///
