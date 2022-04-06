@@ -95,7 +95,7 @@
 		3973A06027FD26D400CDC599 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				3973A06927FD274500CDC599 /* File */,
+				3973A06427FD272F00CDC599 /* MainView.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 		3973A06327FD26F200CDC599 /* MyPageView */ = {
 			isa = PBXGroup;
 			children = (
-				3973A06427FD272F00CDC599 /* MainView.swift */,
+				3973A06927FD274500CDC599 /* File */,
 			);
 			path = MyPageView;
 			sourceTree = "<group>";
