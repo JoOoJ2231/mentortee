@@ -7,14 +7,58 @@
 
 import SwiftUI
 
+public let main_orange = Color(red: 0.22, green: 0.141, blue: 0.108)
+
 struct TopBar: View {
+    
+ 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            
+            VStack {
+                NavigatorView ()
+                    .padding()
+                Spacer()
+            }
+            .navigationTitle("")
+            .navigationBarHidden(true)
+            
+            TapView()
+        }
+}
+
+    
+struct NavigatorView: View {
+    var body: some View {
+            HStack {
+                Text("고민씨")
+                    .font(.title2)
+                    .contentShape(Rectangle())
+                    .foregroundStyle(main_orange)
+                
+                Spacer()
+                
+                NavigationLink(destination: SecondaryView()) {
+                    Image(systemName: "square.and.pencil")
+                        .scaledToFit()
+                }
+                
+            }
+        }
     }
 }
 
-struct TopBar_Previews: PreviewProvider {
+
+struct SecondaryView: View {
+    var body: some View {
+        Text("Here is Secondary View")
+    }
+}
+
+
+struct Topbar_Previwer: PreviewProvider {
     static var previews: some View {
         TopBar()
     }
 }
+
